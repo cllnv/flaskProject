@@ -1,0 +1,30 @@
+import导入的包原来需要带__init__.py文件 从python3.3开始  就可以不带该文件 也可以被导入
+
+__init__.py导入该目录时 会执行 __init__.py里面的代码
+
+
+C:\Users\Administrator>coverage run H:\soft2\python\flaskProject\unit\one.py
+.x.F
+======================================================================
+FAIL: test_12_1 (__main__.UnitTest01)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "h:\soft\python\lib\site-packages\parameterized\parameterized.py", line 533, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "H:\soft2\python\flaskProject\unit\one.py", line 36, in test_12
+    self.assertEqual(a,b,c)
+AssertionError: 1 != 2 : 3
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+FAILED (failures=1, expected failures=1)
+
+C:\Users\Administrator>coverage report
+Name                                       Stmts   Miss  Cover
+--------------------------------------------------------------
+H:\soft2\python\flaskProject\unit\one.py      13      0   100%
+--------------------------------------------------------------
+TOTAL                                         13      0   100%
+
+C:\Users\Administrator>coverage html -d D:/CLL
