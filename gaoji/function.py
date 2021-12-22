@@ -1,5 +1,5 @@
 class Function:
 
-    def check_number(self, number):
+    def check_numberYdd(self, number):
         return isinstance(number, int)
 
