@@ -1,6 +1,6 @@
 # from gaoji.function import Function
 #
-#
+# 7878
 # func = Function()
 import bug
 def aa(x,y,*z):
